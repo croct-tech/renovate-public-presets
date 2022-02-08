@@ -34,6 +34,6 @@
       }
     ],
     "schedule": ["before 4am every weekday"],
-    "prHourlyLimit": 0,
+    "prHourlyLimit": 0
   }
   
