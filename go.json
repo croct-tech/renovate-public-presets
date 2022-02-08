@@ -1,0 +1,29 @@
+{
+    "extends": [
+      "config:base",
+      "group:allNonMajor"
+    ],
+    "labels": ["maintenance"],
+    "reviewers": ["croct-tech/go-dev"],
+    "masterIssue": true,
+    "rangeStrategy": "update-lockfile",
+    "automergeStrategy": "squash",
+    "automergeType": "pr",
+    "lockFileMaintenance": {
+      "enabled": true,
+      "automerge": true
+    },
+    "packageRules": [
+      {
+        "matchManagers": ["go"],
+        "matchPackagePrefixes": ["github.com/croct-tech/"],
+        "schedule": ["at any time"]
+      },
+      {
+        "matchUpdateTypes": ["minor", "patch"],
+        "matchCurrentVersion": "!/^0/",
+        "automerge": true
+      }
+    ]
+  }
+  

@@ -1,0 +1,27 @@
+{
+  "extends": [
+    "config:base"
+  ],
+  "labels": ["maintenance"],
+  "reviewers": ["croct-tech/java"],
+  "masterIssue": true,
+  "automergeStrategy": "squash",
+  "automergeType": "pr",
+  "packageRules": [
+    {
+      "matchPackagePrefixes": ["com.fasterxml.jackson"],
+      "groupName": "Jackson packages"
+    },
+    {
+      "matchPackagePrefixes": ["com.croct"],
+      "groupName": "Croct packages"
+    },
+    {
+      "matchUpdateTypes": ["minor", "patch"],
+      "matchCurrentVersion": "!/^0/",
+      "automerge": true
+    }
+  ],
+  "schedule": ["before 5am every weekday"],
+  "prHourlyLimit": 0
+}

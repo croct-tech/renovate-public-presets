@@ -1,0 +1,28 @@
+{
+  "extends": [
+    "config:base",
+    "group:allNonMajor"
+  ],
+  "labels": ["maintenance"],
+  "reviewers": ["croct-tech/php"],
+  "masterIssue": true,
+  "rangeStrategy": "update-lockfile",
+  "automergeStrategy": "squash",
+  "automergeType": "pr",
+  "lockFileMaintenance": {
+    "enabled": true,
+    "automerge": true
+  },
+  "packageRules": [
+    {
+      "matchPackagePatterns": [ "phpstan" ],
+      "groupName": "phpstan"
+    },
+    {
+      "matchUpdateTypes": ["minor", "patch"],
+      "matchCurrentVersion": "!/^0/",
+      "automerge": true
+    }
+  ],
+  "prHourlyLimit": 0
+}
