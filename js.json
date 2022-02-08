@@ -20,7 +20,7 @@
         "schedule": ["at any time"]
       },
       {
-        "matchPackagePrefixes": ["@croct", "@croct-tech"],
+        "matchPackagePrefixes": ["@croct"],
         "groupName": "Croct packages"
       },
       {
