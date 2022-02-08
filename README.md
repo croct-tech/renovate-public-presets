@@ -8,7 +8,7 @@
     Croct's public configuration presets for <a href="https://renovatebot.com">Renovate</a>.
 </p>
 <p align="center">
-    <img alt="License" src="https://img.shields.io/badge/license-mit-lightgrey" />
+    <img alt="License" src="https://img.shields.io/badge/license-MIT-lightgrey" />
     <br />
     <br />
     <a href="https://github.com/croct-tech/renovate-public-presets/releases">📦 Releases</a>
