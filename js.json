@@ -1,0 +1,39 @@
+{
+    "extends": [
+      "config:base",
+      "group:allNonMajor"
+    ],
+    "labels": ["maintenance"],
+    "reviewers": ["croct-tech/js"],
+    "masterIssue": true,
+    "rangeStrategy": "update-lockfile",
+    "automergeStrategy": "squash",
+    "automergeType": "pr",
+    "lockFileMaintenance": {
+      "enabled": true,
+      "automerge": true
+    },
+    "packageRules": [
+      {
+        "matchManagers": ["npm"],
+        "matchPackagePrefixes": ["@croct/"],
+        "schedule": ["at any time"]
+      },
+      {
+        "matchPackagePrefixes": ["@croct", "@croct-tech"],
+        "groupName": "Croct packages"
+      },
+      {
+        "matchPackagePatterns": ["eslint"],
+        "groupName": "eslint"
+      },
+      {
+        "matchUpdateTypes": ["minor", "patch"],
+        "matchCurrentVersion": "!/^0/",
+        "automerge": true
+      }
+    ],
+    "schedule": ["before 4am every weekday"],
+    "prHourlyLimit": 0,
+  }
+  
