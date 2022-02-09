@@ -17,10 +17,7 @@
       {
         "matchManagers": ["npm"],
         "matchPackagePrefixes": ["@croct/"],
-        "schedule": ["at any time"]
-      },
-      {
-        "matchPackagePrefixes": ["@croct"],
+        "schedule": ["at any time"],
         "groupName": "Croct packages"
       },
       {
