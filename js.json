@@ -1,36 +1,54 @@
 {
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
     "extends": [
-      "config:base",
-      "group:allNonMajor"
+        "config:base",
+        "group:allNonMajor",
+        "group:definetelyTyped"
     ],
-    "labels": ["maintenance"],
-    "reviewers": ["croct-tech/js"],
+    "labels": [
+        "maintenance"
+    ],
+    "reviewers": [
+        "croct-tech/js"
+    ],
     "masterIssue": true,
     "rangeStrategy": "update-lockfile",
     "automergeStrategy": "squash",
     "automergeType": "pr",
     "lockFileMaintenance": {
-      "enabled": true,
-      "automerge": true
+        "enabled": true,
+        "automerge": true
     },
     "packageRules": [
-      {
-        "matchManagers": ["npm"],
-        "matchPackagePrefixes": ["@croct/"],
-        "schedule": ["at any time"],
-        "groupName": "Croct packages"
-      },
-      {
-        "matchPackagePatterns": ["eslint"],
-        "groupName": "eslint"
-      },
-      {
-        "matchUpdateTypes": ["minor", "patch"],
-        "matchCurrentVersion": "!/^0/",
-        "automerge": true
-      }
+        {
+            "matchManagers": [
+                "npm"
+            ],
+            "matchPackagePrefixes": [
+                "@croct/"
+            ],
+            "schedule": [
+                "at any time"
+            ],
+            "groupName": "Croct packages"
+        },
+        {
+            "matchPackagePatterns": [
+                "eslint"
+            ],
+            "groupName": "eslint"
+        },
+        {
+            "matchUpdateTypes": [
+                "minor",
+                "patch"
+            ],
+            "matchCurrentVersion": "!/^0/",
+            "automerge": true
+        }
     ],
-    "schedule": ["before 4am every weekday"],
+    "schedule": [
+        "before 4am every weekday"
+    ],
     "prHourlyLimit": 0
-  }
-  
+}
