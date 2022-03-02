@@ -32,7 +32,7 @@
         },
         {
             "matchPackagePrefixes": [
-                "actions"
+                "actions/"
             ],
             "groupName": "GH actions",
             "automerge": true
