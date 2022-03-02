@@ -31,6 +31,13 @@
             ]
         },
         {
+            "matchPackagePrefixes": [
+                "actions"
+            ],
+            "groupName": "GH actions",
+            "automerge": true
+        },
+        {
             "matchUpdateTypes": [
                 "minor",
                 "patch"
@@ -38,5 +45,9 @@
             "matchCurrentVersion": "!/^0/",
             "automerge": true
         }
-    ]
+    ],
+    "schedule": [
+        "before 4am every weekday"
+    ],
+    "prHourlyLimit": 0
 }

@@ -20,10 +20,26 @@
     },
     "packageRules": [
         {
+            "matchPackagePrefixes": [
+                "croct/"
+            ],
+            "schedule": [
+                "at any time"
+            ],
+            "groupName": "Croct packages"
+        },
+        {
             "matchPackagePatterns": [
                 "phpstan"
             ],
             "groupName": "phpstan"
+        },
+        {
+            "matchPackagePrefixes": [
+                "actions"
+            ],
+            "groupName": "GH actions",
+            "automerge": true
         },
         {
             "matchUpdateTypes": [
@@ -33,6 +49,9 @@
             "matchCurrentVersion": "!/^0/",
             "automerge": true
         }
+    ],
+    "schedule": [
+        "before 4am every weekday"
     ],
     "prHourlyLimit": 0
 }

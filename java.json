@@ -23,7 +23,17 @@
             "matchPackagePrefixes": [
                 "com.croct"
             ],
+            "schedule": [
+                "at any time"
+            ],
             "groupName": "Croct packages"
+        },
+        {
+            "matchPackagePrefixes": [
+                "actions"
+            ],
+            "groupName": "GH actions",
+            "automerge": true
         },
         {
             "matchUpdateTypes": [
@@ -32,17 +42,10 @@
             ],
             "matchCurrentVersion": "!/^0/",
             "automerge": true
-        },
-        {
-            "matchPackagePrefixes": [
-                "actions"
-            ],
-            "groupName": "GH actions",
-            "automerge": true
         }
     ],
     "schedule": [
-        "before 5am every weekday"
+        "before 4am every weekday"
     ],
     "prHourlyLimit": 0
 }

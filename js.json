@@ -38,6 +38,13 @@
             "groupName": "eslint"
         },
         {
+            "matchPackagePrefixes": [
+                "actions"
+            ],
+            "groupName": "GH actions",
+            "automerge": true
+        },
+        {
             "matchUpdateTypes": [
                 "minor",
                 "patch"
