@@ -32,6 +32,13 @@
             ],
             "matchCurrentVersion": "!/^0/",
             "automerge": true
+        },
+        {
+            "matchPackagePrefixes": [
+                "actions"
+            ],
+            "groupName": "GH actions",
+            "automerge": true
         }
     ],
     "schedule": [
