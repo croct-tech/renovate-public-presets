@@ -9,6 +9,7 @@
     "reviewers": [
         "croct-tech/js"
     ],
+    "automerge": true,
     "masterIssue": true,
     "rangeStrategy": "update-lockfile",
     "automergeStrategy": "squash",
