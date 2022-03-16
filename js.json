@@ -10,6 +10,7 @@
         "croct-tech/js"
     ],
     "automerge": true,
+    "platformAutomerge": true,
     "masterIssue": true,
     "rangeStrategy": "update-lockfile",
     "automergeStrategy": "squash",
