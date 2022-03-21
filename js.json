@@ -40,6 +40,12 @@
             "groupName": "eslint"
         },
         {
+            "matchPackagePatterns": [
+                "relay"
+            ],
+            "groupName": "relay"
+        },
+        {
             "matchPackagePrefixes": [
                 "actions/"
             ],
