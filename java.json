@@ -31,7 +31,8 @@
         },
         {
             "matchPackagePrefixes": [
-                "actions/"
+                "actions/",
+                "peter-evans/create-pull-request"
             ],
             "groupName": "GH actions",
             "automerge": true
