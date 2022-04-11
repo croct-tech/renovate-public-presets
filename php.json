@@ -36,7 +36,8 @@
         },
         {
             "matchPackagePrefixes": [
-                "actions/"
+                "actions/",
+                "symfonycorp/security-checker-action action"
             ],
             "groupName": "GH actions",
             "automerge": true
