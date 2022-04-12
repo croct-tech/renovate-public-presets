@@ -16,7 +16,7 @@
     "automergeStrategy": "squash",
     "automergeType": "pr",
     "lockFileMaintenance": {
-        "enabled": true,
+        "enabled": false,
         "automerge": true
     },
     "packageRules": [
