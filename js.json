@@ -16,7 +16,7 @@
     "automergeStrategy": "squash",
     "automergeType": "pr",
     "lockFileMaintenance": {
-        "enabled": false,
+        "enabled": true,
         "automerge": true
     },
     "packageRules": [
@@ -45,10 +45,7 @@
             "groupName": "relay"
         },
         {
-            "matchPackagePrefixes": [
-                "actions/",
-                "peter-evans/create-or-update-comment"
-            ],
+            "matchManagers": ["github-actions"],
             "groupName": "GH actions",
             "automerge": true
         },
@@ -59,6 +56,13 @@
             ],
             "matchCurrentVersion": "!/^0/",
             "automerge": true
+        },
+        {
+            "matchUpdateTypes": ["lockFileMaintenance"],
+            "groupName": "Lockfile Maintenance",
+            "schedule": [
+                "before 4am every weekday"
+            ]
         }
     ],
     "schedule": [
