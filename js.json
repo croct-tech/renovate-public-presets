@@ -33,6 +33,25 @@
             "groupName": "Croct packages"
         },
         {
+            "matchUpdateTypes": [
+                "minor",
+                "patch"
+            ],
+            "matchCurrentVersion": "!/^0/",
+            "groupName": "Bump stable packages",
+            "schedule": ["before 4am every monday"],
+            "automerge": true
+        },
+        {
+            "matchUpdateTypes": [
+                "patch"
+            ],
+            "matchCurrentVersion": "/^0/",
+            "groupName": "Bump unstable packages",
+            "schedule": ["before 4am every monday"],
+            "automerge": true
+        },
+        {
             "matchPackagePatterns": [
                 "eslint"
             ],
@@ -47,14 +66,6 @@
         {
             "matchManagers": ["github-actions"],
             "groupName": "GH actions",
-            "automerge": true
-        },
-        {
-            "matchUpdateTypes": [
-                "minor",
-                "patch"
-            ],
-            "matchCurrentVersion": "!/^0/",
             "automerge": true
         },
         {
