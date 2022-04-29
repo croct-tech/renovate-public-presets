@@ -25,12 +25,27 @@
                 "npm"
             ],
             "matchPackagePrefixes": [
-                "@croct/"
+                "@croct"
             ],
             "schedule": [
                 "at any time"
             ],
             "groupName": "Croct packages"
+        },
+        {
+            "matchUpdateTypes": [
+                "major"
+            ],
+            "schedule": ["before 4am every monday"],
+            "automerge": true
+        },
+        {
+            "matchUpdateTypes": [
+                "minor"
+            ],
+            "matchCurrentVersion": "/^0/",
+            "schedule": ["before 4am every monday"],
+            "automerge": true
         },
         {
             "matchUpdateTypes": [
