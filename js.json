@@ -21,74 +21,37 @@
     },
     "packageRules": [
         {
-            "matchManagers": [
-                "npm"
-            ],
-            "matchPackagePrefixes": [
-                "@croct"
-            ],
-            "schedule": [
-                "at any time"
-            ],
-            "groupName": "Croct packages"
+            "matchUpdateTypes": ["major"]
         },
         {
-            "matchUpdateTypes": [
-                "major"
-            ],
-            "schedule": ["before 4am every monday"],
-            "automerge": true
+            "matchUpdateTypes": ["minor"],
+            "matchCurrentVersion": "/^0/"
         },
         {
-            "matchUpdateTypes": [
-                "minor"
-            ],
-            "matchCurrentVersion": "/^0/",
-            "schedule": ["before 4am every monday"],
-            "automerge": true
-        },
-        {
-            "matchUpdateTypes": [
-                "minor",
-                "patch"
-            ],
+            "matchUpdateTypes": ["minor", "patch"],
             "matchCurrentVersion": "!/^0/",
-            "groupName": "Bump stable packages",
-            "schedule": ["before 4am every monday"],
-            "automerge": true
+            "groupName": "Bump stable packages"
         },
         {
-            "matchUpdateTypes": [
-                "patch"
-            ],
+            "matchUpdateTypes": ["patch"],
             "matchCurrentVersion": "/^0/",
-            "groupName": "Bump unstable packages",
-            "schedule": ["before 4am every monday"],
-            "automerge": true
+            "groupName": "Bump unstable packages"
         },
         {
-            "matchPackagePatterns": [
-                "eslint"
-            ],
+            "matchPackagePatterns": ["eslint"],
             "groupName": "eslint"
         },
         {
-            "matchPackagePatterns": [
-                "relay"
-            ],
+            "matchPackagePatterns": ["relay"],
             "groupName": "relay"
         },
         {
             "matchManagers": ["github-actions"],
-            "groupName": "GH actions",
-            "automerge": true
+            "groupName": "GH actions"
         },
         {
             "matchUpdateTypes": ["lockFileMaintenance"],
-            "groupName": "Lockfile Maintenance",
-            "schedule": [
-                "before 4am every weekday"
-            ]
+            "groupName": "Lockfile Maintenance"
         }
     ],
     "schedule": [
