@@ -55,8 +55,7 @@
         },
         {
             "matchPackagePrefixes": ["@opentelemetry"],
-            "groupName": "OpenTelemetry",
-            "automerge": false
+            "groupName": "OpenTelemetry"
         }
     ],
     "schedule": [
