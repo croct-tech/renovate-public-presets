@@ -39,7 +39,10 @@
         },
         {
             "matchPackagePatterns": ["eslint"],
-            "groupName": "eslint"
+            "groupName": "eslint",
+            "schedule": [
+                "before 4am on the first day of the month"
+            ],
         },
         {
             "matchPackagePatterns": ["relay"],
@@ -58,6 +61,7 @@
             "groupName": "OpenTelemetry"
         }
     ],
+    "timezone": "UTC",
     "schedule": [
         "before 4am every weekday"
     ],
