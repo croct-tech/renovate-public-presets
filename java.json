@@ -9,6 +9,8 @@
     "reviewers": [
         "croct-tech/java"
     ],
+    "prConcurrentLimit": 2,
+    "rebaseWhen": "never",
     "masterIssue": true,
     "automergeStrategy": "squash",
     "automergeType": "pr",

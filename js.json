@@ -9,6 +9,8 @@
     "reviewers": [
         "croct-tech/js"
     ],
+    "prConcurrentLimit": 2,
+    "rebaseWhen": "never",
     "automerge": true,
     "platformAutomerge": true,
     "masterIssue": true,
@@ -42,7 +44,7 @@
             "groupName": "eslint",
             "schedule": [
                 "before 4am on the first day of the month"
-            ],
+            ]
         },
         {
             "matchPackagePatterns": ["relay"],

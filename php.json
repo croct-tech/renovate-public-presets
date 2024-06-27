@@ -10,6 +10,8 @@
     "reviewers": [
         "croct-tech/php"
     ],
+    "prConcurrentLimit": 2,
+    "rebaseWhen": "never",
     "masterIssue": true,
     "rangeStrategy": "update-lockfile",
     "automergeStrategy": "squash",
